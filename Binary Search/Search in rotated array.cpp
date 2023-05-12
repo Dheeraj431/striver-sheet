@@ -8,8 +8,11 @@ class Solution{
             
             if(arr[mid]==key)
                 return mid;
-            
-            if(arr[low]<=arr[mid]){
+             if(arr[mid]==arr[low] && arr[high]==arr[mid]){
+                low++;
+                high--;
+              }
+             else if(arr[low]<=arr[mid]){
                 if(key>=arr[low] && key<=arr[mid]){
                     high=mid-1;
                 }
