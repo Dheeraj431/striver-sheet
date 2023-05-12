@@ -16,6 +16,7 @@ class Solution{
                 if(key>=arr[low] && key<=arr[mid]){
                     high=mid-1;
                 }
+                 
                 else{
                     low = mid+1;
                 }
