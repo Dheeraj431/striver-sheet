@@ -26,5 +26,10 @@ vector<int> topoSort(int V, vector<int> adj[])
 	            }
 	        }
 	    }
+	    /*
+	    	cycle check 
+		if(topo.size()==V)->no cycle
+		else  there is a cycle in the directed.graph()	
+	    */
 	    return topo;
 	}
